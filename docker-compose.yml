@@ -1,0 +1,28 @@
+version: "2.2"
+
+# Running Database Server
+
+services:
+  # Database
+  mongodb:
+    build: ./mongo-seed
+    ports:
+      - 27017:27017
+    networks:
+      - dev  
+
+  # Backend application
+  webserver:
+    build: ./
+    ports:
+      - 3000:3000
+    links:
+      - mongodb
+    networks:
+      - dev    
+
+networks:
+  dev:
+    name: dev
+    driver: bridge
+
