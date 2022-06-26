@@ -1,0 +1,56 @@
+###Get a list of all locations
+GET http://localhost:3000/locations
+
+### Create a location
+POST http://localhost:3000/locations
+Content-Type: application/json
+
+{
+  "name": "BIAL",
+  "distance": 62
+}
+
+### GET a location by id
+GET http://localhost:3000/locations/62b753090380ccb338f44d01
+
+### Delete a location by id
+DELETE  http://localhost:3000/products/62b753090380ccb338f44d01
+
+### 404 route Not Found
+GET http://localhost:3000/abc_xyz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hrXWgw4Q127uqZJ3
