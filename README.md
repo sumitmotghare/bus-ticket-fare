@@ -56,6 +56,10 @@ npm start
 
 URL - https://www.getpostman.com/collections/be04b592cff30ff776ff
 
+![Get All Locations API Call](https://github.com/sumitmotghare/bus-ticket-fare/main/images/get-all-locations.jpg?raw=true)
+
+![Get Bus Fare API Call](https://github.com/sumitmotghare/bus-ticket-fare/main/images/get-fare.jpg?raw=true)
+
 ## Author
 
 - [**Sumit Motghare**]
