@@ -9,13 +9,13 @@ const calculateFare = (source_km, destination_km) =>
  {
   const difference = destination_km - source_km;
   let fare = 0;
-  if ( difference > 0 && difference <= process.env.MINIMUM_BUS_FARE_DISTANCE )
+  if ( difference > 0 && difference <= parseInt(process.env.MINIMUM_BUS_FARE_DISTANCE) )
   {
-    fare = process.env.MINIMUM_BUS_FARE;
-  } else if (difference > process.env.MINIMUM_BUS_FARE_DISTANCE && difference <= 19) {
-    fare = process.env.MINIMUM_BUS_FARE + ((difference - 3) * 2);
+    fare = parseInt(process.env.MINIMUM_BUS_FARE);
+  } else if (difference > parseInt(process.env.MINIMUM_BUS_FARE_DISTANCE) && difference <= 19) {
+    fare = parseInt(process.env.MINIMUM_BUS_FARE) + ((difference - 3) * 2);
   } else if (difference > 19) {
-    fare = process.env.MINIMUM_BUS_FARE + (17 * 2) + (difference - 20);
+    fare = parseInt(process.env.MINIMUM_BUS_FARE) + (17 * 2) + (difference - 20);
   }
   else
   {
